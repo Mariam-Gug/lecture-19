@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html, body {
+    height: 100%;
+}
+body {
+    background-image: linear-gradient(to bottom right, #000, rgb(124, 120, 120));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    height: 90%;
+    max-width: 500px;
+    width: 80%;
+    background-image: linear-gradient(to bottom right, #8346d2, #311853);
+    border-radius: 40px;
+    box-shadow: 0 0 50px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3 {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+#registration {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#registration div {
+    width: 60%;
+}
+#username,
+#password,
+#password2 {
+    height: 40px;
+    width: 100%;
+    padding: 0 20px;
+    border-radius: 50px;
+    border: none;
+}
+#username:focus,
+#password:focus,
+#password2:focus {
+    outline: none;
+}
+.button {
+    width: 60%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #4B7BE5;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+.label {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+.label1 {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
