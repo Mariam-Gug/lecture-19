@@ -12,17 +12,21 @@
 <body>
     <div class="wrapper">
         <h3>Sign Up</h3>
-        <form action="" method="" id="registration">
+        <form action="" method="POST" id="registration">
             <div>
                 <input type="text" name="username" placeholder="username" id="username">
                 <span class="error-text" id="error_username"></span>
             </div>
             <div>
-                <input type="password" name="password" id="password" placeholder="password">
+                <input type="email" placeholder="@mail.com" id="email" onkeydown="validation()">
+                <span class="error-text" id="error_mail"></span>
+            </div>
+            <div>
+                <input type="password" name="password" id="password" placeholder="password"><i id="toggleIcon" class="eye fa-solid fa-eye"></i>
                 <span class="error-text" id="error_password"></span>
             </div>
             <div>
-                <input type="password" name="password2" id="password2" placeholder="Repeat password">
+                <input type="password" name="password2" id="password2" placeholder="Repeat password"><i id= "toggleIcon2" class="eye fa-solid fa-eye"></i>
                 <span class="error-text" id="error_password2"></span>
             </div>
             <div>
@@ -33,9 +37,9 @@
                 <span class="error-text" id="error_age"></span>
             </div>
             <div>
-                <input type="checkbox" name="agree" id="check-agree">
-                <label for="check-agree" class="label1">I agree to the terms and conditions</label>
-                <span class="error-text" id="error_check-agree"></span>
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree" class="label1">I agree to the terms and conditions</label>
+                <span class="error-text" id="error_agree"></span>
             </div>
             <button type="submit" class="button">Submit</button>
         </form>
